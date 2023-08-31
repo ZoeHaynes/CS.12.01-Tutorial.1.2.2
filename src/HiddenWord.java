@@ -8,7 +8,6 @@ public class HiddenWord {
     //constructor
     public HiddenWord(String hiddenWord){
         this.hiddenWord = hiddenWord.toUpperCase();
-        System.out.println("The length of the hidden word is "+ hiddenWord.length());
 
     }
 
@@ -29,7 +28,7 @@ public class HiddenWord {
 
         }
         if(guess.length()>hiddenWord.length() || guess.length()<hiddenWord.length()){
-            throw new IllegalArgumentException("Your guess ( "+ guess +" ) has "+guess.length()+ " characters. The hidden word has 9 characters. Your guess must be a word with 9 characters!");
+            throw new IllegalArgumentException("Your guess ( "+ guess +" ) has "+guess.length()+ " characters. The hidden word has " +hiddenWord.length()+ " characters. Your guess must be a word with " + hiddenWord.length()+ " characters!");
         }
 
         for(int i = 0; i<hiddenWord.length(); i++){
