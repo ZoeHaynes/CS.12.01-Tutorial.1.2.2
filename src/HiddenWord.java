@@ -8,6 +8,7 @@ public class HiddenWord {
     //constructor
     public HiddenWord(String hiddenWord){
         this.hiddenWord = hiddenWord.toUpperCase();
+        System.out.println("The length of the hidden word is "+ hiddenWord.length());
 
     }
 
